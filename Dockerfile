@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-RUN apt-get update && apt-get install libegl1-mesa-dev -y
+RUN apt-get update
 
 COPY server.py ./
 
